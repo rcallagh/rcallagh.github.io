@@ -133,6 +133,7 @@ body {
     padding-top:33px;
     overflow-x:hidden;
     overflow-y:scroll;
+    transition: background-color .7s;
 }
 
 .col-lg-12{
@@ -351,6 +352,7 @@ header {
 .jumbotron {
     background-color: var(--main-background-color) !important;
     background-image: var(--banner-img);
+    transition: background-image 1s;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
