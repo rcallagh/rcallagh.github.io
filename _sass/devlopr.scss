@@ -23,6 +23,8 @@ html[data-theme="dark"] {
     --newsletter-background-color: #222324;
     --button-background-color: #111;
     --banner-img: url(/assets/img/config_slice_dark.png);
+    --jumbotron-text-color: #ff7601;
+    --jumbotron-text-shadow: 2px 2px 4px #000000;
 }
 
 html,
@@ -44,6 +46,8 @@ html[data-theme="light"] {
     --newsletter-background-color: #00000008;
     --button-background-color: #fff;
     --banner-img: url(/assets/img/config_slice.png);
+    --jumbotron-text-color: #111;
+    --jumbotron-text-shadow: 2px 2px 4px #000000;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -69,6 +73,8 @@ html[data-theme="light"] {
         --newsletter-background-color: #222324;
         --button-background-color: #111;
         --banner-img: url(/assets/img/config_slice_dark.png);
+        --jumbotron-text-color: #ff7601;
+        --jumbotron-text-shadow: 2px 2px 4px #000000;
     }
 
     /* Light Mode */
@@ -92,6 +98,8 @@ html[data-theme="light"] {
         --card-background-color: rgb(250, 250, 250);
         --button-background-color: #fff;
         --banner-img: url(/assets/img/config_slice.png);
+        --jumbotron-text-color: #111;
+        --jumbotron-text-shadow: 2px 2px 4px #000000;
     }
 }
 
@@ -377,14 +385,18 @@ header {
 }
 
 .jumbotron-heading{
-    color: #111;
+    color: var(--jumbotron-text-color);
+    text-shadow: var(--jumbotron-text-shadow);
     font-size: 35px;
+    transition: color 0.7s;
 }
 
 .lead {
     font-size: 1.30rem !important;
     font-weight: 600;
-    color: #111 !important;
+    color: var(--jumbotron-text-color) !important;
+    text-shadow: var(--jumbotron-text-shadow);
+    transition: color 0.7s;
 }
 
 .fa {
