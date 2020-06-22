@@ -346,7 +346,7 @@ header {
 /* jumbotron */
 .jumbotron {
     background-color: var(--main-background-color) !important;
-    background-image: url('https://images.pexels.com/photos/1037992/pexels-photo-1037992.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+    background-image: url('/assets/img/config_slice.png');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -453,8 +453,8 @@ header {
     text-align: center;
 }
 .project-img{
-    width:150px;
-    height:100px;
+    width:300px;
+    height:200px;
 }
 .project_details{
     padding: 10px;
