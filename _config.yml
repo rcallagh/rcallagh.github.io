@@ -9,12 +9,12 @@ baseurl: "" # the subpath of your site, e.g. /blog
 urls:
     - text: About Me
       url: /about
+    - text: Projects
+      url: /projects
     - text: Blog
       url: /blog
     - text: Gallery
       url: /gallery
-    # - text: Shop
-    #   url : /shop
     - text: Contact Me
       url : /contact
     # - text: Styleguide
@@ -59,9 +59,10 @@ author_project_details:
               - project_thumbnail: config.png
                 project_title: ConFiG - Contextual Fibre Growth
                 project_description: A realistic synthetic white matter generator.
-                project_url: https://rcallagh.github.io
+                project_url: /projects/config
+                directory: config
                 visibility: true
-
+                current: true
 
 # social links
 twitter_username: RossCallaghan
