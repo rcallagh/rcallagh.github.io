@@ -1,6 +1,12 @@
 ---
 layout: project
 title: "ConFiG - A new state-of-the-art white matter numerical phantom generator"
-github_url: rcallagh.github.io
+short_title: ConFiG
+<!-- github_url: rcallagh.github.io -->
+thumbnail: config.png
+summary: ConFiG enables us to generate more realistic synthetic white matter tissues than ever
+paper_links:
+    - title: "Callaghan et al. 2020, arXiv"
+      link: https://arxiv.org/abs/2003.10197
 ---
-Test big test
+ConFiG is a tool capable of generating realstic synthetic white matter tissues for diffusion MRI simulation. 
