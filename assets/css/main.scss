@@ -41,5 +41,47 @@
 figcaption {
   font-style: italic;
   padding: 2px;
-  font-size: 10px;
+  font-size: 14px;
+}
+
+#home-profile-card {
+    background-color: rgba(180, 180, 180,0.8) !important;
+    text-align: center !important;
+    .profile-img {
+        width: 150px;
+        height: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+#home-about-card {
+    background-color: rgba(180, 180, 180,0.8) !important;
+    text-align: center !important;
+    .profile-img {
+        width: 150px;
+        height: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    margin-left: auto !important;
+    margin-right: auto !important;
+    .project-title{
+        color: var(--jumbotron-text-color) !important;
+        text-shadow: var(--jumbotron-text-shadow);
+        transition: 0.7s
+    }
+    .project-info{
+        color: var(--jumbotron-text-color) !important;
+        text-shadow: var(--jumbotron-text-shadow);
+        transition: 0.7s
+    }
+}
+
+
+.twitter-follow-button{
+    margin-left: auto;
+    margin-right: auto;
 }
