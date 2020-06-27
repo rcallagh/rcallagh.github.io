@@ -16,8 +16,8 @@ layout: default
 
     {% if page.paper_links %}
     <div class="card">
-        <h1>Related paper links</h1>
-        {% for link_i in page.paper_links %}
+        <h1>Related links</h1>
+        {% for link_i in page.related_links %}
         <a href="{{link_i.link}}""><i class="fas fa-link"></i> {{link_i.title}} </a>
         {% endfor %}
 
