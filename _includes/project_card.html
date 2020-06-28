@@ -1,0 +1,24 @@
+<div class="row" id="project-card">
+  <div class="col-md-6">
+    <a class="project-link" href="{{project.project_url}}">
+    <img
+      src="{{site.url}}{{site.baseurl}}/assets/img/{{project.project_thumbnail}}"
+      class="project-img"
+    />
+    </a>
+  </div>
+  <div class="col-md-4 center">
+      <a class="project-link" href="{{project.project_url}}">
+      <h4 class="project-title">{{ project.project_title }}</h4>
+      </a>
+    <h6 class="project_info">{{ project.project_info}}</h6>
+    <p class="project-info">{{ project.project_description }}</p>
+    {% if project.project_url %}
+    <a class="project-link" href="{{project.project_url}}">
+        <p class="project-info">{{ project.project_url }} </p>
+    </a>
+    {% else if project.github_url %} {%- include github_project_button.html url=project.github_url-%} {%
+    endif %}
+  </div>
+</div>
+<br />

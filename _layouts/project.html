@@ -10,11 +10,11 @@ layout: default
         <img src="{{site.url}}{{site.baseurl}}/assets/img/{{ page.thumbnail }}" class="project-img" />
       </a>
       <p class="profile-bio">{{ page.summary }}</p>
-      {% if page.github_url %} {%- include github_project_button.html -%} {%
+      {% if page.github_url %} {%- include github_project_button.html url=page.github_url-%} {%
       endif %}
     </div>
 
-    {% if page.paper_links %}
+    {% if page.related_links %}
     <div class="card">
         <h1>Related links</h1>
         {% for link_i in page.related_links %}
