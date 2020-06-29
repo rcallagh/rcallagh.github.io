@@ -1,0 +1,14 @@
+<p>
+    {% for author in include.publication.authors %}
+    {{author}},
+    {% endfor %}
+    {{include.publication.date | date: "%Y"}},
+    {{include.publication.title}},
+    {{include.publication.journal}},
+    {% if include.publication.doi %}
+        <a href="https://doi.org/{{include.publication.doi}}"> https://doi.org/{{include.publication.doi}} </a>
+    {% else if include.publication.url %}
+        <a href="{{include.publication.url}}"> {{include.publication.url}} </a>
+    {% endif %}
+
+</p>
