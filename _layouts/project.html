@@ -19,7 +19,6 @@ layout: default
         <h1>Related links</h1>
         {% for link_i in page.related_links %}
         {% if link_i.internal %}
-        <a href={% link {{link_i.link}} %}><i class="fas fa-link"></i> {{link_i.title}} </a>
         {% else %}
         <a href="{{link_i.link}}""><i class="fas fa-link"></i> {{link_i.title}} </a>
         {% endif %}
