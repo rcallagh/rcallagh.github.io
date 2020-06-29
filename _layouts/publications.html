@@ -2,8 +2,7 @@
 layout: default
 ---
 
-{% assign publication_categories =  site.data.publications.overview | map: 'category_no' | join: ',' | join: ',' | split: ',' | uniq | sort %}
-
+{% assign publication_categories =  site.data.publications.overview | map: 'category_no' | join: ',' | join: ',' | split: ',' | uniq | sort%}
 
 <div class="row" id="blog-posts-container">
         <div class="col-lg-11 offset-md-1">
@@ -20,7 +19,7 @@ layout: default
                 <h1> All Publications </h1>
                 <div style="margin-left:30px">
                     {% for category in publication_categories%}
-                    {% assign cat_publications = site.data.publications.overview | where: "category_no", {{category}} %}
+                    {% assign cat_publications = site.data.publications.overview | where: "category_no", category %}
                     <h2> {{cat_publications[0].category | replace: "_", " " | capitalize}}(s) </h2>
                     {% for publication in cat_publications%}
                     {%- include publication_citation.html publication=publication -%}
