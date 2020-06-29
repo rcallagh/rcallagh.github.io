@@ -45,7 +45,7 @@ figcaption {
 }
 
 #home-profile-card {
-    background-color: rgba(180, 180, 180,0.8) !important;
+    background-color: var(--card-background-color) !important;
     text-align: center !important;
     .profile-img {
         width: 150px;
@@ -58,7 +58,7 @@ figcaption {
 }
 
 #home-about-card {
-    background-color: rgba(180, 180, 180,0.8) !important;
+    background-color: var(--card-background-color) !important;
     text-align: center !important;
     .profile-img {
         width: 150px;

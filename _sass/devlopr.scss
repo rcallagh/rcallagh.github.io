@@ -24,7 +24,7 @@ html[data-theme="dark"] {
     --button-background-color: #111;
     --banner-img: url(/assets/img/config_slice_dark.png);
     --jumbotron-text-color: #ff7601;
-    --jumbotron-text-shadow: 2px 2px 4px #000000;
+    --jumbotron-text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 2px 2px 4px #000000;
 }
 
 html,
@@ -47,7 +47,7 @@ html[data-theme="light"] {
     --button-background-color: #fff;
     --banner-img: url(/assets/img/config_slice.png);
     --jumbotron-text-color: #111;
-    --jumbotron-text-shadow: 2px 2px 4px #000000;
+    --jumbotron-text-shadow: -1px 0 #a0a0a0, 0 1px #a0a0a0, 1px 0 #a0a0a0, 0 -1px #a0a0a0, 2px 2px 4px #a0a0a0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -74,7 +74,7 @@ html[data-theme="light"] {
         --button-background-color: #111;
         --banner-img: url(/assets/img/config_slice_dark.png);
         --jumbotron-text-color: #ff7601;
-        --jumbotron-text-shadow: 2px 2px 4px #000000;
+        --jumbotron-text-shadow: -1px 0 #606060, 0 1px #606060, 1px 0 #606060, 0 -1px #606060, 2px 2px 4px #000000;
     }
 
     /* Light Mode */
@@ -99,7 +99,7 @@ html[data-theme="light"] {
         --button-background-color: #fff;
         --banner-img: url(/assets/img/config_slice.png);
         --jumbotron-text-color: #111;
-        --jumbotron-text-shadow: 2px 2px 4px #000000;
+        --jumbotron-text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff, 2px 2px 4px #000000;
     }
 }
 
@@ -364,6 +364,8 @@ header {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    padding: 1rem 2em !important;
+    margin-bottom: 1rem !important;
 }
 /* pagination */
 .pagination-link{
@@ -739,7 +741,7 @@ footer {
 
     }
     .jumbotron {
-        padding: 10rem 1rem !important;
+        padding: 1rem 1rem !important;
     }
 
 }
@@ -819,7 +821,7 @@ footer {
 
     }
     .jumbotron {
-        padding: 10rem 1rem !important;
+        padding: 1rem 1rem !important;
     }
 
 }

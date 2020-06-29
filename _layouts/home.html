@@ -10,29 +10,30 @@ layout: default
   });
 </script>
     <div class="jumbotron" style="text-align: center;">
-      <div class="row">
-          <div class="col-lg-5 offset-md-1">
-              <div class="card" id="home-profile-card">
-                  <img class="profile-img" src="/assets/img/profile.png" />
-                  <p class="jumbotron-heading">Hi, I'm {{site.author}} !</p>
-                  <p class="lead" id="typewriteText"></p>
-                     {%- include github_follow_button.html -%}
-                     {%- include twitter_follow_button.html -%}
-              </div>
-          </div>
-          <div class="col-lg-6">
-              <div class="card" id="home-about-card">
-                  <p class="jumbotron-heading">Current Projects</p>
-                  {% for project in site.author_project_details %} {% if project.current
-                  == true %}
-                  {%- include project_card.html -%}
-                  {% endif %} {% endfor %}
-              </div>
-          </div>
-      </div>
+      <img class="author-profile-img" src="/assets/img/profile.png" />
+      <p class="jumbotron-heading">Hi, I'm {{site.author}} !</p>
+      <p class="lead" id="typewriteText"></p>
+         {%- include github_follow_button.html -%}
+         {%- include twitter_follow_button.html -%}
     </div>
-    <div class="col-lg-8 offset-md-2">
-      <section id="recent-articles">
+    <div class="row justify-content-center">
+    <!-- <div class="col-lg-12 offset-md-2"> -->
+        <div class="col-md-5">
+            <div class="card">
+                <a href="/about"> <h1>About me</h1> </a>
+                    <p>{{ site.author_bio }}</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <h1>Current Projects</h1>
+                {% for project in site.author_project_details %} {% if project.current
+                == true %}
+                {%- include project_card.html -%}
+                {% endif %} {% endfor %}
+            </div>
+        </div>
+      <!-- <section id="recent-articles">
         <div id="recent-articles-header">
           <div id="recent-articles-title">
             <h1 class="card-title">Recent Posts</h1>
@@ -68,5 +69,6 @@ layout: default
           </li>
           {% endfor %}
         </ul>
-      </section>
+      </section> -->
+    <!-- </div> -->
     </div>
