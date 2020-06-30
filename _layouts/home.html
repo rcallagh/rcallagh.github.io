@@ -29,9 +29,11 @@ layout: default
                 <h1>Current Projects</h1>
                 {% for project in site.author_project_details %} {% if project.current
                 == true %}
-                {%- include project_card.html -%}
+                {%- include project_mini_card.html -%}
                 {% endif %} {% endfor %}
+                <a href="/projects"><h4> Click here for all projects </h4> </a>
             </div>
+
         </div>
       <!-- <section id="recent-articles">
         <div id="recent-articles-header">
