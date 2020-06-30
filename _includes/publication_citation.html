@@ -1,9 +1,10 @@
+{% if include.publication.category == "journal_paper" %}
 <p>
     {% for author in include.publication.authors %}
     {{author}},
     {% endfor %}
     {{include.publication.date | date: "%Y"}},
-    {{include.publication.title}},
+    <em>{{include.publication.title}},</em>
     {{include.publication.journal}},
     {% if include.publication.doi %}
         <a href="https://doi.org/{{include.publication.doi}}"> https://doi.org/{{include.publication.doi}} </a>
@@ -12,3 +13,19 @@
     {% endif %}
 
 </p>
+{% else if include.publication.category contains "conference" %}
+<p>
+    {% for author in include.publication.authors %}
+    {{author}},
+    {% endfor %}
+    {{include.publication.date | date: "%Y"}},
+    <em>{{include.publication.title}},</em>
+    {{include.publication.conference}},
+    {% if include.publication.doi %}
+        <a href="https://doi.org/{{include.publication.doi}}"> https://doi.org/{{include.publication.doi}} </a>
+    {% else if include.publication.url %}
+        <a href="{{include.publication.url}}"> {{include.publication.url}} </a>
+    {% endif %}
+
+</p>
+{% endif %}

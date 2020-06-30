@@ -1,3 +1,4 @@
+# categories: 1 - Journal Paper, 2 - Conference Paper, 3 - Conference Abstract
 -
   title: ConFiG - Contextual Fibre Growth to generate realistic axonal packing for diffusion MRI simulation
   authors:
@@ -26,3 +27,53 @@
   featured: false
   category: conference_paper
   category_no: 2
+-
+  title: Improved Contextual Fibre Growth for Generating White Matter Numerical Phantoms with Realistic Microstructure
+  authors:
+      - Ross Callaghan
+      - Daniel C. Alexander
+      - Hui Zhang
+      - Marco Palombo
+  conference: Proceedings of the 28th Annual Meeting of the International Society for Magnetic Resonance in Medicine (ISMRM)
+  date: 2020-08-12
+  type: oral talk
+  category: conference_abstract
+  category_no: 3
+-
+  title: Towards a more realistic and flexible white matter numerical phantom generator for diffusion MRI simulation
+  authors:
+      - Ross Callaghan
+      - Noam Shemesh
+      - Daniel C. Alexander
+      - Hui Zhang
+      - Marco Palombo
+  conference: Proceedings of the 27th Annual Meeting of the International Society for Magnetic Resonance in Medicine (ISMRM)
+  date: 2019-05-12
+  type: poster
+  category: conference_abstract
+  category_no: 3
+-
+  title: Contextual fibre growth to generate realistic axonal packing for diffusion MRI simulation
+  authors:
+      - Ross Callaghan
+      - Daniel C. Alexander
+      - Hui Zhang
+      - Marco Palombo
+  conference: Proceedings of the 25th Annual Meeting of the Organization for Human Brain Mapping (OHBM)
+  date: 2019-07-12
+  type: poster
+  category: conference_abstract
+  category_no: 3
+-
+  title: Comparing MEGA editing techniques for in-vivo measurement of 2-hydroxyglutarate
+  authors:
+      - Ross Callaghan
+      - Bhavana Solanky
+      - Sotirios Bisdas
+      - Hui Zhang
+      - Enrico De Vita
+  conference: Proceedings of the 26th Annual Meeting of the International Society for Magnetic Resonance in Medicine (ISMRM)
+  date: 2018-06-12
+  type: poster
+  category: conference_abstract
+  category_no: 3
