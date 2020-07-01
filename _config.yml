@@ -13,7 +13,7 @@ urls:
       url: /projects
     - text: Publications
       url: /publications
-    - text: Blog
+    - text: Posts
       url: /blog
     - text: Gallery
       url: /gallery
@@ -65,7 +65,7 @@ author_project_details:
                 directory: config
                 visibility: true
                 current: true
-                
+
 # social links
 twitter_username: RossCallaghan
 github_username: rcallagh
