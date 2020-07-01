@@ -36,3 +36,47 @@ layout: default
 
   </div>
 </div>
+<div class="row justify-content-center">
+    <div class="col-md-11">
+        <!-- <div class="card"> -->
+        <ul id="lightSlider">
+            {% for picture in site.data.galleries[page.gallery].pictures %}
+            <li class='lslide' data-thumb="{{ site.url }}{{ site.baseurl }}/assets/img/gallery/{{ page.gallery }}/{{ picture.thumbnail }}" data-src="{{ site.url }}{{ site.baseurl }}/assets/img/gallery/{{ page.gallery }}/{{ picture.original }}" >
+                <img src="{{ site.url }}{{ site.baseurl }}/assets/img/gallery/{{ page.gallery }}/{{ picture.thumbnail }}"/>
+            </li>
+            {% endfor %}
+        </ul>
+        </div>
+    <!-- </div> -->
+</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#lightSlider").lightSlider({
+        item:5,
+        loop:true,
+        enableDrag: false,
+        onSliderLoad: function(el) {
+            el.lightGallery({
+                selector: '#lightSlider .lslide'
+            });
+        },
+        responsive: [
+            {
+                breakpoint:800,
+                settings: {
+                    item:3,
+                    slideMove:1,
+                  }
+            },
+            {
+                breakpoint:640,
+                settings: {
+                    item:1,
+                    slideMove:1
+                  }
+            }
+        ]
+    });
+});
+</script>
