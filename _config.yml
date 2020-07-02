@@ -13,8 +13,8 @@ urls:
       url: /projects
     - text: Publications
       url: /publications
-    - text: Posts
-      url: /blog
+    # - text: Posts
+    #   url: /blog
     - text: Gallery
       url: /gallery
     - text: Contact Me
