@@ -13,4 +13,12 @@ related_links:
       link: https://arxiv.org/abs/2003.10197
 gallery: config_phantoms
 ---
-ConFiG is a tool capable of generating realstic synthetic white matter tissues for diffusion MRI simulation.
+ConFiG is a new numerical phantom generator capable of creating realstic synthetic white matter tissues for diffusion MRI simulation.
+
+ConFiG can achieve the state-of-the-art packing density in complex WM phantoms including up to three crossing bundles of fibres, outperforming the previous state-of-the-art, MEDUSA.  
+{% include figure.html path="/assets/img/project/config/improvements.png" caption="" %}
+
+Not only can we generate high density phantoms, but ConFiG phantoms also capture microstructural features found in real axons including fine details like bends and bulges
+{% include figure.html path="/assets/img/project/config/fibre_examples.png" caption="" %}
+Moreover, ConFiG captures complex fibre cross-sections that we see in real axons, including axons being deformed around one another and naturally occurring pockets of space between axons
+{% include figure.html path="/assets/img/project/config/virthist.png" caption="" %}
