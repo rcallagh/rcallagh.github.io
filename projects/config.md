@@ -9,8 +9,8 @@ related_links:
     - title: ConFiG Overview
       link: _posts/2020-06-22-config.md
       internal: true
-    - title: "Callaghan et al. 2020, arXiv"
-      link: https://arxiv.org/abs/2003.10197
+    - title: "Callaghan et al. 2020, NeuroImage"
+      link: https://doi.org/10.1016/j.neuroimage.2020.117107
 gallery: config_phantoms
 ---
 ConFiG is a new numerical phantom generator capable of creating realstic synthetic white matter tissues for diffusion MRI simulation.

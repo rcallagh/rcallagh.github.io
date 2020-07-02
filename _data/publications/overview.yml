@@ -6,10 +6,10 @@
       - Daniel C. Alexander
       - Marco Palombo
       - Gary Zhang
-  journal: arXiv
+  journal: NeuroImage
   date: 2020-03-23
-  url: https://arxiv.org/abs/2003.10197
-  doi:
+  url:
+  doi: 10.1016/j.neuroimage.2020.117107
   featured: true
   category: journal_paper
   category_no: 1
