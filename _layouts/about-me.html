@@ -82,6 +82,14 @@ layout: default
           <i class="fab fa-flickr"></i>
         </a>
         {% endif %}
+        {% if site.researchgate_username %}
+        <a
+          class="social-link"
+          href="https://researchgate.net/profile/{{ site.researchgate_username }}"
+        >
+          <i class="fab fa-fw fa-researchgate"></i>
+        </a>
+        {% endif %}
       </p>
 
       {% if site.author_location %}
