@@ -36,3 +36,13 @@ pictures:
   sizes:
   - 6.png
   thumbnail: 6-thumbnail.png
+- filename: 7
+  original: 7.png
+  sizes:
+  - 7.png
+  thumbnail: 7-thumbnail.png
+- filename: 8
+  original: 8.png
+  sizes:
+  - 8.png
+  thumbnail: 8-thumbnail.png
