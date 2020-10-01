@@ -35,6 +35,12 @@ author_website_url: "http://rcallagh.github.io"
 typewrite-text: PhD student generating synthetic brain tissues!
 
 author_work_experiences:
+              - company_name: AINOSTICS
+                company_url: https://ainostics.com
+                company_logo: ainostics.jpg
+                designation: Imaging Data Scientist
+                description: Implementing deep learning techniques to improve image analysis
+                visibility: true
 
 author_education_details:
               - college_logo: ucl.png
@@ -93,7 +99,7 @@ highlighter: rouge
 permalink: pretty
 
 # Choose what to show ( can be true or false)
-show_author_work_experiences: false
+show_author_work_experiences: true
 show_author_education_details: true
 show_author_project_details: true
 
